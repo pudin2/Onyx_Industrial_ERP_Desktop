@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  <Label>
+    <Label_id>frmTitulo</Label_id>
+    <Label_name>Ajuste de Materiales OT</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnCompraParcial</Label_id>
+    <Label_name>Pedir Materiales</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>lblMsgInformativo</Label_id>
+    <Label_name>La cantidad de materiales que está verificando debe corresponder a la cantidad total del pedido aprobado por el cliente.</Label_name>
+  </Label>
+
+
+</Table>

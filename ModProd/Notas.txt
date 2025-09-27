@@ -1,0 +1,12 @@
+﻿DATA BINDING
+
+http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.aspx?cs-save-lang=1&cs-lang=vb#code-snippet-2
+
+http://msdn.microsoft.com/en-us/library/y0h25we8.aspx
+
+
+GRABANDO PROGRAMACIÓN
+1. Si existe la programación para ese día y recurso, avisar al usuario; si el usuario decide continuar, se borra la anterión (elimina totalmente)
+2. Pendiente reemplazar Button1
+3. en combo operario mostrar cantidad de subtareas asignadas
+4. al pasar a la programación con > se debe eliminar el item de la lista

@@ -1,0 +1,101 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="UrlReportes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://p30015cg21070w9:8080/ReportServer</Value>
+    </Setting>
+    <Setting Name="NombreLogoMenu" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Logo.png</Value>
+    </Setting>
+    <Setting Name="TituloSimulador" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Calculadora Comercial</Value>
+    </Setting>
+    <Setting Name="Boton1Simulador" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Calcular</Value>
+    </Setting>
+    <Setting Name="NombreRptOrdenProduccion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10_ImpresionOrdenTrabajo</Value>
+    </Setting>
+    <Setting Name="MargenesCartaCotizacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">40,30,75,10</Value>
+    </Setting>
+    <Setting Name="MargenesMaterialesCotizacion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">40,30,75,10</Value>
+    </Setting>
+    <Setting Name="FormatoCantidad" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">N2</Value>
+    </Setting>
+    <Setting Name="FormatoC_U" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C0</Value>
+    </Setting>
+    <Setting Name="FormatoCostoTotal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C0</Value>
+    </Setting>
+    <Setting Name="FiltroAdjuntos" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">JPEG|*.jpg;*.jpeg;*.jpe;*.jfif |PDF Archivos (*.pdf)|*.pdf|PNG|*.png</Value>
+    </Setting>
+    <Setting Name="IDNumeroCotizacionRapida" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="EstadoxRol_Id" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="BotonRptCostosMP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Imprimir</Value>
+    </Setting>
+    <Setting Name="MargenesRptGeneral" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10,10,10,10</Value>
+    </Setting>
+    <Setting Name="grProductosColumnsMode" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="MargenesRptImprieOT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0.5,0.5,0.5,0.5</Value>
+    </Setting>
+    <Setting Name="ModoInicio" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Win10</Value>
+    </Setting>
+    <Setting Name="Notificar" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No</Value>
+    </Setting>
+    <Setting Name="IntervaloSplash" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1500</Value>
+    </Setting>
+    <Setting Name="NombreRptOrdenProduccionBorrador" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10b_ImpresionOrdenTrabajo</Value>
+    </Setting>
+    <Setting Name="ColCalcular" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FormatoFecha" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">yyyyMMdd</Value>
+    </Setting>
+    <Setting Name="ModoDebug" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="stAmbiente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PRUEBAS</Value>
+    </Setting>
+    <Setting Name="OnyxTempFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\Modprod\tmpAnexos</Value>
+    </Setting>
+    <Setting Name="TmpMaxWidth" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">800</Value>
+    </Setting>
+    <Setting Name="TmpMaxHeight" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="OptDefaultGastosMontaje" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Transporte</Value>
+    </Setting>
+    <Setting Name="cnnModProd" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=.\sqlexpress;Initial Catalog=Modprod;Integrated Security=True;Encrypt=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\sqlexpress;Initial Catalog=Modprod;Integrated Security=True;Encrypt=False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

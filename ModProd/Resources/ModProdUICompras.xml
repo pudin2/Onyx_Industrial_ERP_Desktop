@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  
+  <Label>
+    <Label_id>frmTitulo</Label_id>
+    <Label_name>Cuadro de Pedidos</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnTitulo</Label_id>
+    <Label_name>Pedidos</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnGrabar</Label_id>
+    <Label_name>Grabar</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnCargar</Label_id>
+    <Label_name>Cargar</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnImprimir</Label_id>
+    <Label_name>Imprimir</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnCotizar</Label_id>
+    <Label_name>Cotizar</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>MensajeCorreo_Parte1</Label_id>
+    <Label_name>Señores: </Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>MensajeCorreo_Parte2</Label_id>
+    <Label_name>Solicitamos amablemente, sean cotizados los siguientes materiales:</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>frmTituloMtoPedidos</Label_id>
+    <Label_name>Mantenimiento de Pedidos</Label_name>
+  </Label>
+
+
+
+
+
+</Table>

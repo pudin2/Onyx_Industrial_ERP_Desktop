@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  <Label>
+    <Label_id>rptImprimeCotizacion</Label_id>
+    <Label_name>/produccion/05_ImprimeCotizacion</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>rptImprimeCartaCotizacion</Label_id>
+    <Label_name>/produccion/05_ImprimeCartaCotizacion</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>rptImprimeMuestra</Label_id>
+    <Label_name>/produccion/09_ImprimeMuestra</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>frmImpBoletas_Margenes</Label_id>
+    <!-- Arriba, Abajo, Izq, Der -->
+    <!-- <value>80,50,100,100</value> -->
+    <Label_name>40,30,75,10</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>frmOrdenProduccion_Margenes</Label_id>
+    <!-- Arriba, Abajo, Izq, Der -->
+    <!-- <value>80,50,100,100</value> -->
+    <Label_name>1,1,1,1</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>frmOrdenOT_Margenes</Label_id>
+    <!-- Arriba, Abajo, Izq, Der -->
+    <!-- <value>80,50,100,100</value> -->
+    <Label_name>10,0.5,20,0.5</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>rptImprimeOC</Label_id>
+    <Label_name>/produccion/11_OrdenDeCompra</Label_name>
+  </Label>
+  <Label>
+    <Label_id>frmOrdenCompra_Margenes</Label_id>
+    <!-- Arriba, Abajo, Izq, Der -->
+    <!-- <value>80,50,100,100</value> -->
+    <Label_name>0.5,0.5,0.5,0.5</Label_name>
+  </Label>
+
+
+    <Label>
+        <Label_id>rptImprimeRemision</Label_id>
+        <Label_name>/produccion/15_ImpresionRemision</Label_name>
+    </Label>
+    <Label>
+        <Label_id>frmImprimeRemision_Margenes</Label_id>
+        <!-- Arriba, Abajo, Izq, Der -->
+        <!-- <value>80,50,100,100</value> -->
+        <Label_name>0.5,0.5,0.5,0.5</Label_name>
+    </Label>
+
+    <Label>
+      <Label_id>rptImprimeSubT</Label_id>
+      <Label_name>/produccion/16B_RPT_BoletasDeTrabajo</Label_name>
+    </Label>
+    <Label>
+      <Label_id>frmRptSubTareas</Label_id>
+      <!-- Arriba, Abajo, Izq, Der -->
+      <!-- <value>80,50,100,100</value> -->
+      <Label_name>10,0.5,20,0.5</Label_name>
+    </Label>
+
+
+    <Label>
+      <Label_id>rptImprimeProg</Label_id>
+      <Label_name>/produccion/17_RPT_ProgramaDiarioOperario</Label_name>
+    </Label>
+    <Label>
+      <Label_id>frmImprimeProg</Label_id>
+      <!-- Arriba, Abajo, Izq, Der -->
+      <!-- <value>80,50,100,100</value> -->
+      <Label_name>10,0.5,20,0.5</Label_name>
+    </Label>
+  
+  
+  
+  
+</Table>

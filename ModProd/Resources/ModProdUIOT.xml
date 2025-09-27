@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  <Label>
+    <Label_id>frmTitulo</Label_id>
+    <Label_name>Registro de Orden de Trabajo</Label_name>
+  </Label>
+
+  
+
+  <Label>
+    <Label_id>tituloMsjPregTerminaRegistro</Label_id>
+    <Label_name>Registro de OT</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>preguntaMsjPregTerminaRegistroParte1</Label_id>
+    <Label_name>Orden de trabajo creada con el número </Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>preguntaMsjPregTerminaRegistroParte2</Label_id>
+    <Label_name>Desea terminar la etapa de </Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>preguntaMsjPregTerminaActualizarParte1</Label_id>
+    <Label_name>Orden de trabajo actualizada con éxito! </Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>ColorFondoFrm</Label_id>
+    <Label_name>153,180,209</Label_name>
+  </Label>
+
+
+
+</Table>

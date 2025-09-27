@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+
+  <Label>
+    <Label_id>ftmTitulo</Label_id>
+    <Label_name>Ajuste de Cotización con OT</Label_name>
+  </Label>
+  
+  
+  <Label>
+    <Label_id>lblCliente</Label_id>
+    <Label_name>Cliente:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblProyecto</Label_id>
+    <Label_name>Proyecto:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblAlcance</Label_id>
+    <Label_name>Alcance:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblObservacion</Label_id>
+    <Label_name>Observación:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblObservacionInterna</Label_id>
+    <Label_name>observación Interna:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblAsignadaA</Label_id>
+    <Label_name>Asignada A:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>fmeDatosCarta</Label_id>
+    <Label_name>Datos Carta</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblDirigidaA</Label_id>
+    <Label_name>Dirigida A:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblFormaPago</Label_id>
+    <Label_name>Forma Pago:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblTiempoFabricacion</Label_id>
+    <Label_name>Tiempo Fabricación:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblTiempoMontaje</Label_id>
+    <Label_name>Tiempo Montaje:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblRequisicion</Label_id>
+    <Label_name>Requisición:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>chkVentaDirecta</Label_id>
+    <Label_name>VentaDirecta</Label_name>
+  </Label>
+  <Label>
+    <Label_id>chkMontaje</Label_id>
+    <Label_name>Requiere Montaje</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnSigFase</Label_id>
+    <Label_name>Siguiente Fase</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnGrabar</Label_id>
+    <Label_name>Grabar</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnCargar</Label_id>
+    <Label_name>Cargar</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnAprobar</Label_id>
+    <Label_name>Aprobar</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnImprimir</Label_id>
+    <Label_name>Imprimir</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnActualizar</Label_id>
+    <Label_name>Actualizar</Label_name>
+  </Label>
+  <Label>
+    <Label_id>fmeProductos</Label_id>
+    <Label_name>Productos</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblProducto</Label_id>
+    <Label_name>Producto:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblCantidadProd</Label_id>
+    <Label_name>Cantidad:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblCosto</Label_id>
+    <Label_name>Costo:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnAdicionarProd</Label_id>
+    <Label_name>Adicionar</Label_name>
+  </Label>
+  <Label>
+    <Label_id>fmeMO</Label_id>
+    <Label_name>Mano de Obra y Otros</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblArea</Label_id>
+    <Label_name>Area:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblCantidadMO</Label_id>
+    <Label_name>Cantidad:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblCostoMO</Label_id>
+    <Label_name>Costo:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnAdicionarMO</Label_id>
+    <Label_name>Adicionar</Label_name>
+  </Label>
+  <Label>
+    <Label_id>fmeOtros</Label_id>
+    <Label_name>Otros</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblImprevistos</Label_id>
+    <Label_name>Imprevistos:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblUtilidad</Label_id>
+    <Label_name>Utilidad:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblFecha</Label_id>
+    <Label_name>Fecha:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblTotalGeneral</Label_id>
+    <Label_name>Total:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>lblPrecioFinal</Label_id>
+    <Label_name>Precio Final:</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnCalcular</Label_id>
+    <Label_name>Calcular</Label_name>
+  </Label>
+  <Label>
+    <Label_id>btnAnexos</Label_id>
+    <Label_name>Adjuntar …</Label_name>
+  </Label>
+  <Label>
+    <Label_id>etqCabecera</Label_id>
+    <Label_name>Cabecera</Label_name>
+  </Label>
+  <Label>
+    <Label_id>etqDetalle</Label_id>
+    <Label_name>Detalle</Label_name>
+  </Label>
+  <Label>
+    <Label_id>etqAnexos</Label_id>
+    <Label_name>Anexos</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>etqMuestras</Label_id>
+    <Label_name>Características</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>lblFechaEntrega</Label_id>
+    <Label_name>XX Fecha Entrega XX</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>lblObservacionInterna</Label_id>
+    <Label_name>XX Observación Interna XX</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblFecha1</Label_id>
+    <Label_name>Fecha 1</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblFecha2</Label_id>
+    <Label_name>Fecha 2</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>etqEventos</Label_id>
+    <Label_name>Bitacora</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>msgTextoSalir</Label_id>
+    <Label_name>Si cierra esta ventana NO SE GUARDARAN los cambios, realmente desea salir?</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>msgTextoCargar</Label_id>
+    <Label_name>Si carga otra Orden de Trabajo NO SE GUARDARAN los cambios, realmente desea continuar?</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblReq</Label_id>
+    <Label_name>Req. Visita:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblOC_Cliente</Label_id>
+    <Label_name>OC Cliente:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblContrato</Label_id>
+    <Label_name>Contrato:</Label_name>
+  </Label>
+
+
+  
+
+  <Label>
+    <Label_id>tituloMensajeValidaChecklist</Label_id>
+    <Label_name>Lista de chequeo vacia</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>preguntaMensajeValidaChecklist</Label_id>
+    <Label_name>No se han chequeado los siguientes materiales, desea continuar?</Label_name>
+  </Label>
+
+</Table>

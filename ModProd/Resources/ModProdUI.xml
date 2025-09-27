@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  <Label>
+    <Label_id>etqCalcCom</Label_id>
+    <Label_name>Cotizador</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>etqMnt</Label_id>
+    <Label_name>Mantenimiento</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>etqRpt</Label_id>
+    <Label_name>Reportes</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>etqTran</Label_id>
+    <Label_name>Producción</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>MntBtn01</Label_id>
+    <Label_name>Crear Producto PT</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>RptBtn01</Label_id>
+    <Label_name>Consultar Orden</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>RptBtn02</Label_id>
+    <Label_name>Entregas Area</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>RptBtn03</Label_id>
+    <Label_name>Cotizaciones</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>TranBtn01</Label_id>
+    <Label_name>Crear Orden</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>TranBtn02</Label_id>
+    <Label_name>Asignar al Area</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>TranBtn03</Label_id>
+    <Label_name>Entregar Resumen</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>TranBtn04</Label_id>
+    <Label_name>Cerrar Orden</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>TranBtn05</Label_id>
+    <Label_name>Agregar Material OT</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>CalcComBtn01</Label_id>
+    <Label_name>Cotización</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>CalcComBtn02</Label_id>
+    <Label_name>Orden de Pedido</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>CalcComBtn03</Label_id>
+    <Label_name>Orden de Diseño</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>CalcComBtn04</Label_id>
+    <Label_name>Orden de Muestra</Label_name>
+  </Label>
+  
+  <Label>
+    <Label_id>CalcComBtn05</Label_id>
+    <Label_name>Orden de Producción</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>CalcbtnOrdenDiseño</Label_id>
+    <Label_name>Orden de Diseño XXX</Label_name>
+  </Label>
+
+
+  <Label>
+    <Label_id>BtnCambiaEstadosCot</Label_id>
+    <Label_name>Cambia Estado Cotización</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnContratos</Label_id>
+    <Label_name>Contrato</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnRptCotAGerencia</Label_id>
+    <Label_name>Rpt. Cot. a Gerencia</Label_name>
+  </Label>
+
+
+
+</Table>
+
+

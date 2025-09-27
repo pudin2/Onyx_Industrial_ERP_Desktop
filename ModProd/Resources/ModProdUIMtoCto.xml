@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Table>
+  <Label>
+    <Label_id>lblCliente</Label_id>
+    <Label_name>Cliente:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblAlcance</Label_id>
+    <Label_name>Alcance:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblF_Final</Label_id>
+    <Label_name>Fecha Final:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblF_Inicial</Label_id>
+    <Label_name>Fecha Inicial:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblNumero</Label_id>
+    <Label_name>Contrato:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>lblValor</Label_id>
+    <Label_name>Valor:</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>btnGrabar</Label_id>
+    <Label_name>Grabar</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>msgContenidoGrabar</Label_id>
+    <Label_name>Contrato grabado con éxito</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>msgTituloGrabar</Label_id>
+    <Label_name>Contrato Grabado</Label_name>
+  </Label>
+
+  <Label>
+    <Label_id>tituloForm</Label_id>
+    <Label_name>Contratos</Label_name>
+  </Label>
+
+
+</Table>
+  

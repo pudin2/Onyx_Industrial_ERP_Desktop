@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCalculadora" targetNamespace="http://tempuri.org/dsCalculadora.xsd" xmlns:mstns="http://tempuri.org/dsCalculadora.xsd" xmlns="http://tempuri.org/dsCalculadora.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ModProdConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ModProdConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ModProd.My.MySettings.GlobalReference.Default.ModProdConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="cnnModProd" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="cnnModProd (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ModProd.My.MySettings.GlobalReference.Default.cnnModProd" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CabCotizacionTableAdapter" GeneratorDataComponentClassName="CabCotizacionTableAdapter" Name="CabCotizacion" UserDataComponentName="CabCotizacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cnnModProd (MySettings)" DbObjectName="ModProd.dbo.CabCotizacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[CabCotizacion] WHERE (([Id] = @Original_Id) AND ((@IsNull_Fecha = 1 AND [Fecha] IS NULL) OR ([Fecha] = @Original_Fecha)) AND ((@IsNull_IdCliente = 1 AND [IdCliente] IS NULL) OR ([IdCliente] = @Original_IdCliente)) AND ((@IsNull_NombreCliente = 1 AND [NombreCliente] IS NULL) OR ([NombreCliente] = @Original_NombreCliente)) AND ((@IsNull_NombreProyecto = 1 AND [NombreProyecto] IS NULL) OR ([NombreProyecto] = @Original_NombreProyecto)) AND ((@IsNull_TiempoFabricacion = 1 AND [TiempoFabricacion] IS NULL) OR ([TiempoFabricacion] = @Original_TiempoFabricacion)) AND ((@IsNull_TiempoEntrega = 1 AND [TiempoEntrega] IS NULL) OR ([TiempoEntrega] = @Original_TiempoEntrega)) AND ((@IsNull_RequiereMontaje = 1 AND [RequiereMontaje] IS NULL) OR ([RequiereMontaje] = @Original_RequiereMontaje)) AND ((@IsNull_Requisicion = 1 AND [Requisicion] IS NULL) OR ([Requisicion] = @Original_Requisicion)) AND ((@IsNull_DirigidaA = 1 AND [DirigidaA] IS NULL) OR ([DirigidaA] = @Original_DirigidaA)) AND ((@IsNull_Aviso = 1 AND [Aviso] IS NULL) OR ([Aviso] = @Original_Aviso)) AND ((@IsNull_FormaPago = 1 AND [FormaPago] IS NULL) OR ([FormaPago] = @Original_FormaPago)) AND ((@IsNull_NumCotizacion = 1 AND [NumCotizacion] IS NULL) OR ([NumCotizacion] = @Original_NumCotizacion)) AND ((@IsNull_AsignadoA = 1 AND [AsignadoA] IS NULL) OR ([AsignadoA] = @Original_AsignadoA)) AND ((@IsNull_PrecioBase = 1 AND [PrecioBase] IS NULL) OR ([PrecioBase] = @Original_PrecioBase)) AND ((@IsNull_PrecioFinal = 1 AND [PrecioFinal] IS NULL) OR ([PrecioFinal] = @Original_PrecioFinal)) AND ((@IsNull_VentaDirecta = 1 AND [VentaDirecta] IS NULL) OR ([VentaDirecta] = @Original_VentaDirecta)) AND ((@IsNull_AIU = 1 AND [AIU] IS NULL) OR ([AIU] = @Original_AIU)) AND ((@IsNull_Imprevistos = 1 AND [Imprevistos] IS NULL) OR ([Imprevistos] = @Original_Imprevistos)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_Tipo = 1 AND [Tipo] IS NULL) OR ([Tipo] = @Original_Tipo)) AND ((@IsNull_Req_Id = 1 AND [Req_Id] IS NULL) OR ([Req_Id] = @Original_Req_Id)) AND ((@IsNull_OC_Cliente = 1 AND [OC_Cliente] IS NULL) OR ([OC_Cliente] = @Original_OC_Cliente)) AND ((@IsNull_Contrato_Id = 1 AND [Contrato_Id] IS NULL) OR ([Contrato_Id] = @Original_Contrato_Id)) AND ((@IsNull_AIU_MO = 1 AND [AIU_MO] IS NULL) OR ([AIU_MO] = @Original_AIU_MO)) AND ((@IsNull_CntAFabricar = 1 AND [CntAFabricar] IS NULL) OR ([CntAFabricar] = @Original_CntAFabricar)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IdCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdCliente" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdCliente" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NombreCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NombreCliente" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NombreCliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreCliente" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NombreProyecto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NombreProyecto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NombreProyecto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreProyecto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TiempoFabricacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TiempoFabricacion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TiempoFabricacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoFabricacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TiempoEntrega" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TiempoEntrega" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TiempoEntrega" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoEntrega" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RequiereMontaje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiereMontaje" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_RequiereMontaje" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="RequiereMontaje" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Requisicion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Requisicion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Requisicion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Requisicion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DirigidaA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DirigidaA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DirigidaA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DirigidaA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Aviso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Aviso" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Aviso" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Aviso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FormaPago" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FormaPago" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FormaPago" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FormaPago" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NumCotizacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumCotizacion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_NumCotizacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumCotizacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AsignadoA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AsignadoA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AsignadoA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AsignadoA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PrecioBase" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PrecioBase" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_PrecioBase" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioBase" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PrecioFinal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PrecioFinal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_PrecioFinal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioFinal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_VentaDirecta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="VentaDirecta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_VentaDirecta" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="VentaDirecta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AIU" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AIU" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_AIU" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Imprevistos" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Imprevistos" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Imprevistos" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Imprevistos" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_estado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tipo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Tipo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Req_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Req_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Req_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Req_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OC_Cliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OC_Cliente" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_OC_Cliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OC_Cliente" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Contrato_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Contrato_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Contrato_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Contrato_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AIU_MO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AIU_MO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_AIU_MO" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU_MO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CntAFabricar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CntAFabricar" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_CntAFabricar" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CntAFabricar" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[CabCotizacion] ([Id], [Fecha], [Observacion], [IdCliente], [NombreCliente], [NombreProyecto], [Alcance], [TiempoFabricacion], [TiempoEntrega], [RequiereMontaje], [Requisicion], [DirigidaA], [Aviso], [FormaPago], [NumCotizacion], [AsignadoA], [PrecioBase], [PrecioFinal], [VentaDirecta], [AIU], [Imprevistos], [estado], [ObsInterna], [Tipo], [Req_Id], [OC_Cliente], [Contrato_Id], [AIU_MO], [CntAFabricar]) VALUES (@Id, @Fecha, @Observacion, @IdCliente, @NombreCliente, @NombreProyecto, @Alcance, @TiempoFabricacion, @TiempoEntrega, @RequiereMontaje, @Requisicion, @DirigidaA, @Aviso, @FormaPago, @NumCotizacion, @AsignadoA, @PrecioBase, @PrecioFinal, @VentaDirecta, @AIU, @Imprevistos, @estado, @ObsInterna, @Tipo, @Req_Id, @OC_Cliente, @Contrato_Id, @AIU_MO, @CntAFabricar);
+SELECT Id, Fecha, Observacion, IdCliente, NombreCliente, NombreProyecto, Alcance, TiempoFabricacion, TiempoEntrega, RequiereMontaje, Requisicion, DirigidaA, Aviso, FormaPago, NumCotizacion, AsignadoA, PrecioBase, PrecioFinal, VentaDirecta, AIU, Imprevistos, Estado, ObsInterna, Tipo, Req_Id, OC_Cliente, Contrato_Id, AIU_MO, CntAFabricar FROM CabCotizacion WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Observacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Observacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdCliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NombreCliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreCliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NombreProyecto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreProyecto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Alcance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Alcance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TiempoFabricacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoFabricacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TiempoEntrega" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoEntrega" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@RequiereMontaje" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="RequiereMontaje" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Requisicion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Requisicion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DirigidaA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DirigidaA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Aviso" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Aviso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FormaPago" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FormaPago" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NumCotizacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumCotizacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AsignadoA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AsignadoA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PrecioBase" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioBase" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PrecioFinal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioFinal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@VentaDirecta" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="VentaDirecta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@AIU" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Imprevistos" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Imprevistos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ObsInterna" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ObsInterna" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Tipo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Req_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Req_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@OC_Cliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OC_Cliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Contrato_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Contrato_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@AIU_MO" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU_MO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@CntAFabricar" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CntAFabricar" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Id, Fecha, Observacion, IdCliente, NombreCliente, NombreProyecto, Alcance, TiempoFabricacion, TiempoEntrega, RequiereMontaje, Requisicion, DirigidaA, Aviso, FormaPago, NumCotizacion, AsignadoA, PrecioBase, PrecioFinal, VentaDirecta, AIU, Imprevistos, estado, ObsInterna, Tipo, Req_Id, OC_Cliente, Contrato_Id,
+AIU_MO, CntAFabricar
+FROM dbo.CabCotizacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[CabCotizacion] SET [Id] = @Id, [Fecha] = @Fecha, [Observacion] = @Observacion, [IdCliente] = @IdCliente, [NombreCliente] = @NombreCliente, [NombreProyecto] = @NombreProyecto, [Alcance] = @Alcance, [TiempoFabricacion] = @TiempoFabricacion, [TiempoEntrega] = @TiempoEntrega, [RequiereMontaje] = @RequiereMontaje, [Requisicion] = @Requisicion, [DirigidaA] = @DirigidaA, [Aviso] = @Aviso, [FormaPago] = @FormaPago, [NumCotizacion] = @NumCotizacion, [AsignadoA] = @AsignadoA, [PrecioBase] = @PrecioBase, [PrecioFinal] = @PrecioFinal, [VentaDirecta] = @VentaDirecta, [AIU] = @AIU, [Imprevistos] = @Imprevistos, [estado] = @estado, [ObsInterna] = @ObsInterna, [Tipo] = @Tipo, [Req_Id] = @Req_Id, [OC_Cliente] = @OC_Cliente, [Contrato_Id] = @Contrato_Id, [AIU_MO] = @AIU_MO, [CntAFabricar] = @CntAFabricar WHERE (([Id] = @Original_Id) AND ((@IsNull_Fecha = 1 AND [Fecha] IS NULL) OR ([Fecha] = @Original_Fecha)) AND ((@IsNull_IdCliente = 1 AND [IdCliente] IS NULL) OR ([IdCliente] = @Original_IdCliente)) AND ((@IsNull_NombreCliente = 1 AND [NombreCliente] IS NULL) OR ([NombreCliente] = @Original_NombreCliente)) AND ((@IsNull_NombreProyecto = 1 AND [NombreProyecto] IS NULL) OR ([NombreProyecto] = @Original_NombreProyecto)) AND ((@IsNull_TiempoFabricacion = 1 AND [TiempoFabricacion] IS NULL) OR ([TiempoFabricacion] = @Original_TiempoFabricacion)) AND ((@IsNull_TiempoEntrega = 1 AND [TiempoEntrega] IS NULL) OR ([TiempoEntrega] = @Original_TiempoEntrega)) AND ((@IsNull_RequiereMontaje = 1 AND [RequiereMontaje] IS NULL) OR ([RequiereMontaje] = @Original_RequiereMontaje)) AND ((@IsNull_Requisicion = 1 AND [Requisicion] IS NULL) OR ([Requisicion] = @Original_Requisicion)) AND ((@IsNull_DirigidaA = 1 AND [DirigidaA] IS NULL) OR ([DirigidaA] = @Original_DirigidaA)) AND ((@IsNull_Aviso = 1 AND [Aviso] IS NULL) OR ([Aviso] = @Original_Aviso)) AND ((@IsNull_FormaPago = 1 AND [FormaPago] IS NULL) OR ([FormaPago] = @Original_FormaPago)) AND ((@IsNull_NumCotizacion = 1 AND [NumCotizacion] IS NULL) OR ([NumCotizacion] = @Original_NumCotizacion)) AND ((@IsNull_AsignadoA = 1 AND [AsignadoA] IS NULL) OR ([AsignadoA] = @Original_AsignadoA)) AND ((@IsNull_PrecioBase = 1 AND [PrecioBase] IS NULL) OR ([PrecioBase] = @Original_PrecioBase)) AND ((@IsNull_PrecioFinal = 1 AND [PrecioFinal] IS NULL) OR ([PrecioFinal] = @Original_PrecioFinal)) AND ((@IsNull_VentaDirecta = 1 AND [VentaDirecta] IS NULL) OR ([VentaDirecta] = @Original_VentaDirecta)) AND ((@IsNull_AIU = 1 AND [AIU] IS NULL) OR ([AIU] = @Original_AIU)) AND ((@IsNull_Imprevistos = 1 AND [Imprevistos] IS NULL) OR ([Imprevistos] = @Original_Imprevistos)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_Tipo = 1 AND [Tipo] IS NULL) OR ([Tipo] = @Original_Tipo)) AND ((@IsNull_Req_Id = 1 AND [Req_Id] IS NULL) OR ([Req_Id] = @Original_Req_Id)) AND ((@IsNull_OC_Cliente = 1 AND [OC_Cliente] IS NULL) OR ([OC_Cliente] = @Original_OC_Cliente)) AND ((@IsNull_Contrato_Id = 1 AND [Contrato_Id] IS NULL) OR ([Contrato_Id] = @Original_Contrato_Id)) AND ((@IsNull_AIU_MO = 1 AND [AIU_MO] IS NULL) OR ([AIU_MO] = @Original_AIU_MO)) AND ((@IsNull_CntAFabricar = 1 AND [CntAFabricar] IS NULL) OR ([CntAFabricar] = @Original_CntAFabricar)));
+SELECT Id, Fecha, Observacion, IdCliente, NombreCliente, NombreProyecto, Alcance, TiempoFabricacion, TiempoEntrega, RequiereMontaje, Requisicion, DirigidaA, Aviso, FormaPago, NumCotizacion, AsignadoA, PrecioBase, PrecioFinal, VentaDirecta, AIU, Imprevistos, Estado, ObsInterna, Tipo, Req_Id, OC_Cliente, Contrato_Id, AIU_MO, CntAFabricar FROM CabCotizacion WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Observacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Observacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdCliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NombreCliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreCliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NombreProyecto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreProyecto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Alcance" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Alcance" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TiempoFabricacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoFabricacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TiempoEntrega" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoEntrega" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@RequiereMontaje" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="RequiereMontaje" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Requisicion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Requisicion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DirigidaA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DirigidaA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Aviso" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Aviso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FormaPago" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FormaPago" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NumCotizacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumCotizacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AsignadoA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AsignadoA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PrecioBase" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioBase" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PrecioFinal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioFinal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@VentaDirecta" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="VentaDirecta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@AIU" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Imprevistos" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Imprevistos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@estado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ObsInterna" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ObsInterna" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Tipo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Req_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Req_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@OC_Cliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OC_Cliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Contrato_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Contrato_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@AIU_MO" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU_MO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@CntAFabricar" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CntAFabricar" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IdCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdCliente" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdCliente" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NombreCliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NombreCliente" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NombreCliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreCliente" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NombreProyecto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NombreProyecto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NombreProyecto" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreProyecto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TiempoFabricacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TiempoFabricacion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TiempoFabricacion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoFabricacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TiempoEntrega" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TiempoEntrega" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TiempoEntrega" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TiempoEntrega" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RequiereMontaje" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiereMontaje" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_RequiereMontaje" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="RequiereMontaje" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Requisicion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Requisicion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Requisicion" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Requisicion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DirigidaA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DirigidaA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DirigidaA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DirigidaA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Aviso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Aviso" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Aviso" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Aviso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FormaPago" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FormaPago" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FormaPago" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FormaPago" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NumCotizacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumCotizacion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_NumCotizacion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumCotizacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AsignadoA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AsignadoA" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AsignadoA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AsignadoA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PrecioBase" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PrecioBase" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_PrecioBase" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioBase" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PrecioFinal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PrecioFinal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_PrecioFinal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PrecioFinal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_VentaDirecta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="VentaDirecta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_VentaDirecta" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="VentaDirecta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AIU" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AIU" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_AIU" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Imprevistos" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Imprevistos" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Imprevistos" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Imprevistos" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_estado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tipo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Tipo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Req_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Req_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Req_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Req_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OC_Cliente" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OC_Cliente" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_OC_Cliente" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OC_Cliente" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Contrato_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Contrato_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Contrato_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Contrato_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AIU_MO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AIU_MO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_AIU_MO" Precision="5" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="AIU_MO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CntAFabricar" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CntAFabricar" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_CntAFabricar" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CntAFabricar" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Observacion" DataSetColumn="Observacion" />
+              <Mapping SourceColumn="IdCliente" DataSetColumn="IdCliente" />
+              <Mapping SourceColumn="NombreCliente" DataSetColumn="NombreCliente" />
+              <Mapping SourceColumn="NombreProyecto" DataSetColumn="NombreProyecto" />
+              <Mapping SourceColumn="Alcance" DataSetColumn="Alcance" />
+              <Mapping SourceColumn="TiempoFabricacion" DataSetColumn="TiempoFabricacion" />
+              <Mapping SourceColumn="TiempoEntrega" DataSetColumn="TiempoEntrega" />
+              <Mapping SourceColumn="RequiereMontaje" DataSetColumn="RequiereMontaje" />
+              <Mapping SourceColumn="Requisicion" DataSetColumn="Requisicion" />
+              <Mapping SourceColumn="DirigidaA" DataSetColumn="DirigidaA" />
+              <Mapping SourceColumn="Aviso" DataSetColumn="Aviso" />
+              <Mapping SourceColumn="FormaPago" DataSetColumn="FormaPago" />
+              <Mapping SourceColumn="NumCotizacion" DataSetColumn="NumCotizacion" />
+              <Mapping SourceColumn="AsignadoA" DataSetColumn="AsignadoA" />
+              <Mapping SourceColumn="PrecioBase" DataSetColumn="PrecioBase" />
+              <Mapping SourceColumn="PrecioFinal" DataSetColumn="PrecioFinal" />
+              <Mapping SourceColumn="VentaDirecta" DataSetColumn="VentaDirecta" />
+              <Mapping SourceColumn="AIU" DataSetColumn="AIU" />
+              <Mapping SourceColumn="Imprevistos" DataSetColumn="Imprevistos" />
+              <Mapping SourceColumn="estado" DataSetColumn="estado" />
+              <Mapping SourceColumn="ObsInterna" DataSetColumn="ObsInterna" />
+              <Mapping SourceColumn="Tipo" DataSetColumn="Tipo" />
+              <Mapping SourceColumn="Req_Id" DataSetColumn="Req_Id" />
+              <Mapping SourceColumn="OC_Cliente" DataSetColumn="OC_Cliente" />
+              <Mapping SourceColumn="Contrato_Id" DataSetColumn="Contrato_Id" />
+              <Mapping SourceColumn="AIU_MO" DataSetColumn="AIU_MO" />
+              <Mapping SourceColumn="CntAFabricar" DataSetColumn="CntAFabricar" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CheckListCotizacionTableAdapter" GeneratorDataComponentClassName="CheckListCotizacionTableAdapter" Name="CheckListCotizacion" UserDataComponentName="CheckListCotizacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ModProdConnectionString (MySettings)" DbObjectName="ModProd.dbo.CheckListCotizacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[CheckListCotizacion] WHERE (([Id] = @Original_Id) AND ((@IsNull_Cab_Id = 1 AND [Cab_Id] IS NULL) OR ([Cab_Id] = @Original_Cab_Id)) AND ((@IsNull_CheckList_Id = 1 AND [CheckList_Id] IS NULL) OR ([CheckList_Id] = @Original_CheckList_Id)) AND ((@IsNull_Valor = 1 AND [Valor] IS NULL) OR ([Valor] = @Original_Valor)) AND ((@IsNull_Fecha = 1 AND [Fecha] IS NULL) OR ([Fecha] = @Original_Fecha)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cab_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Cab_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CheckList_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CheckList_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_CheckList_Id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CheckList_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Valor" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Valor" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Valor" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Valor" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[CheckListCotizacion] ([Cab_Id], [CheckList_Id], [Valor], [Fecha]) VALUES (@Cab_Id, @CheckList_Id, @Valor, @Fecha);
+SELECT Id, Cab_Id, CheckList_Id, Valor, Fecha FROM CheckListCotizacion WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Cab_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@CheckList_Id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CheckList_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Valor" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Valor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Cab_Id, CheckList_Id, Valor, Fecha FROM dbo.CheckListCotizacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[CheckListCotizacion] SET [Cab_Id] = @Cab_Id, [CheckList_Id] = @CheckList_Id, [Valor] = @Valor, [Fecha] = @Fecha WHERE (([Id] = @Original_Id) AND ((@IsNull_Cab_Id = 1 AND [Cab_Id] IS NULL) OR ([Cab_Id] = @Original_Cab_Id)) AND ((@IsNull_CheckList_Id = 1 AND [CheckList_Id] IS NULL) OR ([CheckList_Id] = @Original_CheckList_Id)) AND ((@IsNull_Valor = 1 AND [Valor] IS NULL) OR ([Valor] = @Original_Valor)) AND ((@IsNull_Fecha = 1 AND [Fecha] IS NULL) OR ([Fecha] = @Original_Fecha)));
+SELECT Id, Cab_Id, CheckList_Id, Valor, Fecha FROM CheckListCotizacion WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Cab_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@CheckList_Id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CheckList_Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Valor" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Valor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cab_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Cab_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CheckList_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CheckList_Id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_CheckList_Id" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="CheckList_Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Valor" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Valor" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Valor" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Valor" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Fecha" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Fecha" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Fecha" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="ModProd.dbo.CheckListCotizacion" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Cab_Id" DataSetColumn="Cab_Id" />
+              <Mapping SourceColumn="CheckList_Id" DataSetColumn="CheckList_Id" />
+              <Mapping SourceColumn="Valor" DataSetColumn="Valor" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DetCotizacionTableAdapter" GeneratorDataComponentClassName="DetCotizacionTableAdapter" Name="DetCotizacion" UserDataComponentName="DetCotizacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ModProdConnectionString (MySettings)" DbObjectName="ModProd_Tecnipalma.dbo.DetCotizacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[DetCotizacion] WHERE (([Cab_ID] = @Original_Cab_ID) AND ([Id] = @Original_Id) AND ([Tipo] = @Original_Tipo) AND ((@IsNull_CodInventario = 1 AND [CodInventario] IS NULL) OR ([CodInventario] = @Original_CodInventario)) AND ((@IsNull_Inventario_ID = 1 AND [Inventario_ID] IS NULL) OR ([Inventario_ID] = @Original_Inventario_ID)) AND ((@IsNull_Unidad_ID = 1 AND [Unidad_ID] IS NULL) OR ([Unidad_ID] = @Original_Unidad_ID)) AND ((@IsNull_Cant = 1 AND [Cant] IS NULL) OR ([Cant] = @Original_Cant)) AND ((@IsNull_Costo = 1 AND [Costo] IS NULL) OR ([Costo] = @Original_Costo)) AND ((@IsNull_Estado = 1 AND [Estado] IS NULL) OR ([Estado] = @Original_Estado)) AND ((@IsNull_CostoTotal = 1 AND [CostoTotal] IS NULL) OR ([CostoTotal] = @Original_CostoTotal)) AND ((@IsNull_DescItem = 1 AND [DescItem] IS NULL) OR ([DescItem] = @Original_DescItem)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Cab_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Original_Tipo" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CodInventario" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CodInventario" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodInventario" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodInventario" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Inventario_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Inventario_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Inventario_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Inventario_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Unidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unidad_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Unidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unidad_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_Cant" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Cant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Costo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Costo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_Costo" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Costo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_Estado" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CostoTotal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CostoTotal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_CostoTotal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CostoTotal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DescItem" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DescItem" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DescItem" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescItem" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[DetCotizacion] ([Cab_ID], [Tipo], [CodInventario], [Inventario_ID], [Unidad_ID], [Cant], [Costo], [Estado], [CostoTotal], [DescItem]) VALUES (@Cab_ID, @Tipo, @CodInventario, @Inventario_ID, @Unidad_ID, @Cant, @Costo, @Estado, @CostoTotal, @DescItem);
+SELECT Cab_ID, Id, Tipo, CodInventario, Inventario_ID, Unidad_ID, Cant, Costo, Estado, CostoTotal, DescItem FROM DetCotizacion WHERE (Cab_ID = @Cab_ID) AND (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Cab_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Tipo" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodInventario" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodInventario" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Inventario_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Inventario_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Unidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unidad_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Cant" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Cant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Costo" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Costo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Estado" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CostoTotal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CostoTotal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DescItem" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescItem" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Cab_ID, Id, Tipo, CodInventario, Inventario_ID, Unidad_ID, Cant, Costo, Estado, CostoTotal 
+, DescItem
+FROM dbo.DetCotizacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[DetCotizacion] SET [Cab_ID] = @Cab_ID, [Tipo] = @Tipo, [CodInventario] = @CodInventario, [Inventario_ID] = @Inventario_ID, [Unidad_ID] = @Unidad_ID, [Cant] = @Cant, [Costo] = @Costo, [Estado] = @Estado, [CostoTotal] = @CostoTotal, [DescItem] = @DescItem WHERE (([Cab_ID] = @Original_Cab_ID) AND ([Id] = @Original_Id) AND ([Tipo] = @Original_Tipo) AND ((@IsNull_CodInventario = 1 AND [CodInventario] IS NULL) OR ([CodInventario] = @Original_CodInventario)) AND ((@IsNull_Inventario_ID = 1 AND [Inventario_ID] IS NULL) OR ([Inventario_ID] = @Original_Inventario_ID)) AND ((@IsNull_Unidad_ID = 1 AND [Unidad_ID] IS NULL) OR ([Unidad_ID] = @Original_Unidad_ID)) AND ((@IsNull_Cant = 1 AND [Cant] IS NULL) OR ([Cant] = @Original_Cant)) AND ((@IsNull_Costo = 1 AND [Costo] IS NULL) OR ([Costo] = @Original_Costo)) AND ((@IsNull_Estado = 1 AND [Estado] IS NULL) OR ([Estado] = @Original_Estado)) AND ((@IsNull_CostoTotal = 1 AND [CostoTotal] IS NULL) OR ([CostoTotal] = @Original_CostoTotal)) AND ((@IsNull_DescItem = 1 AND [DescItem] IS NULL) OR ([DescItem] = @Original_DescItem)));
+SELECT Cab_ID, Id, Tipo, CodInventario, Inventario_ID, Unidad_ID, Cant, Costo, Estado, CostoTotal, DescItem FROM DetCotizacion WHERE (Cab_ID = @Cab_ID) AND (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Cab_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Tipo" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodInventario" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodInventario" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Inventario_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Inventario_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Unidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unidad_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Cant" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Cant" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Costo" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Costo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Estado" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CostoTotal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CostoTotal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DescItem" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescItem" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Cab_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cab_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Original_Tipo" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Tipo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CodInventario" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CodInventario" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodInventario" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodInventario" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Inventario_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Inventario_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Inventario_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Inventario_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Unidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unidad_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Unidad_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unidad_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cant" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cant" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_Cant" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Cant" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Costo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Costo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_Costo" Precision="14" ProviderType="Decimal" Scale="4" Size="0" SourceColumn="Costo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Estado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_Estado" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="Estado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CostoTotal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CostoTotal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_CostoTotal" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CostoTotal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DescItem" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DescItem" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DescItem" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescItem" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="ModProd_Tecnipalma.dbo.DetCotizacion" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cab_ID" DataSetColumn="Cab_ID" />
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Tipo" DataSetColumn="Tipo" />
+              <Mapping SourceColumn="CodInventario" DataSetColumn="CodInventario" />
+              <Mapping SourceColumn="Inventario_ID" DataSetColumn="Inventario_ID" />
+              <Mapping SourceColumn="Unidad_ID" DataSetColumn="Unidad_ID" />
+              <Mapping SourceColumn="Cant" DataSetColumn="Cant" />
+              <Mapping SourceColumn="Costo" DataSetColumn="Costo" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="CostoTotal" DataSetColumn="CostoTotal" />
+              <Mapping SourceColumn="DescItem" DataSetColumn="DescItem" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCalculadora" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCalculadora" msprop:Generator_UserDSName="dsCalculadora">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CabCotizacion" msprop:Generator_TableClassName="CabCotizacionDataTable" msprop:Generator_TableVarName="tableCabCotizacion" msprop:Generator_RowChangedName="CabCotizacionRowChanged" msprop:Generator_TablePropName="CabCotizacion" msprop:Generator_RowDeletingName="CabCotizacionRowDeleting" msprop:Generator_RowChangingName="CabCotizacionRowChanging" msprop:Generator_RowEvHandlerName="CabCotizacionRowChangeEventHandler" msprop:Generator_RowDeletedName="CabCotizacionRowDeleted" msprop:Generator_RowClassName="CabCotizacionRow" msprop:Generator_UserTableName="CabCotizacion" msprop:Generator_RowEvArgName="CabCotizacionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Observacion" msprop:Generator_ColumnVarNameInTable="columnObservacion" msprop:Generator_ColumnPropNameInRow="Observacion" msprop:Generator_ColumnPropNameInTable="ObservacionColumn" msprop:Generator_UserColumnName="Observacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdCliente" msprop:Generator_ColumnVarNameInTable="columnIdCliente" msprop:Generator_ColumnPropNameInRow="IdCliente" msprop:Generator_ColumnPropNameInTable="IdClienteColumn" msprop:Generator_UserColumnName="IdCliente" type="xs:int" minOccurs="0" />
+              <xs:element name="NombreCliente" msprop:Generator_ColumnVarNameInTable="columnNombreCliente" msprop:Generator_ColumnPropNameInRow="NombreCliente" msprop:Generator_ColumnPropNameInTable="NombreClienteColumn" msprop:Generator_UserColumnName="NombreCliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1600" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreProyecto" msprop:Generator_ColumnVarNameInTable="columnNombreProyecto" msprop:Generator_ColumnPropNameInRow="NombreProyecto" msprop:Generator_ColumnPropNameInTable="NombreProyectoColumn" msprop:Generator_UserColumnName="NombreProyecto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Alcance" msprop:Generator_ColumnVarNameInTable="columnAlcance" msprop:Generator_ColumnPropNameInRow="Alcance" msprop:Generator_ColumnPropNameInTable="AlcanceColumn" msprop:Generator_UserColumnName="Alcance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TiempoFabricacion" msprop:Generator_ColumnVarNameInTable="columnTiempoFabricacion" msprop:Generator_ColumnPropNameInRow="TiempoFabricacion" msprop:Generator_ColumnPropNameInTable="TiempoFabricacionColumn" msprop:Generator_UserColumnName="TiempoFabricacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TiempoEntrega" msprop:Generator_ColumnVarNameInTable="columnTiempoEntrega" msprop:Generator_ColumnPropNameInRow="TiempoEntrega" msprop:Generator_ColumnPropNameInTable="TiempoEntregaColumn" msprop:Generator_UserColumnName="TiempoEntrega" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RequiereMontaje" msprop:Generator_ColumnVarNameInTable="columnRequiereMontaje" msprop:Generator_ColumnPropNameInRow="RequiereMontaje" msprop:Generator_ColumnPropNameInTable="RequiereMontajeColumn" msprop:Generator_UserColumnName="RequiereMontaje" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Requisicion" msprop:Generator_ColumnVarNameInTable="columnRequisicion" msprop:Generator_ColumnPropNameInRow="Requisicion" msprop:Generator_ColumnPropNameInTable="RequisicionColumn" msprop:Generator_UserColumnName="Requisicion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DirigidaA" msprop:Generator_ColumnVarNameInTable="columnDirigidaA" msprop:Generator_ColumnPropNameInRow="DirigidaA" msprop:Generator_ColumnPropNameInTable="DirigidaAColumn" msprop:Generator_UserColumnName="DirigidaA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aviso" msprop:Generator_ColumnVarNameInTable="columnAviso" msprop:Generator_ColumnPropNameInRow="Aviso" msprop:Generator_ColumnPropNameInTable="AvisoColumn" msprop:Generator_UserColumnName="Aviso" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FormaPago" msprop:Generator_ColumnVarNameInTable="columnFormaPago" msprop:Generator_ColumnPropNameInRow="FormaPago" msprop:Generator_ColumnPropNameInTable="FormaPagoColumn" msprop:Generator_UserColumnName="FormaPago" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumCotizacion" msprop:Generator_ColumnVarNameInTable="columnNumCotizacion" msprop:Generator_ColumnPropNameInRow="NumCotizacion" msprop:Generator_ColumnPropNameInTable="NumCotizacionColumn" msprop:Generator_UserColumnName="NumCotizacion" type="xs:int" minOccurs="0" />
+              <xs:element name="AsignadoA" msprop:Generator_ColumnVarNameInTable="columnAsignadoA" msprop:Generator_ColumnPropNameInRow="AsignadoA" msprop:Generator_ColumnPropNameInTable="AsignadoAColumn" msprop:Generator_UserColumnName="AsignadoA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrecioBase" msprop:Generator_ColumnVarNameInTable="columnPrecioBase" msprop:Generator_ColumnPropNameInRow="PrecioBase" msprop:Generator_ColumnPropNameInTable="PrecioBaseColumn" msprop:Generator_UserColumnName="PrecioBase" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrecioFinal" msprop:Generator_ColumnVarNameInTable="columnPrecioFinal" msprop:Generator_ColumnPropNameInRow="PrecioFinal" msprop:Generator_ColumnPropNameInTable="PrecioFinalColumn" msprop:Generator_UserColumnName="PrecioFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VentaDirecta" msprop:Generator_ColumnVarNameInTable="columnVentaDirecta" msprop:Generator_ColumnPropNameInRow="VentaDirecta" msprop:Generator_ColumnPropNameInTable="VentaDirectaColumn" msprop:Generator_UserColumnName="VentaDirecta" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AIU" msprop:Generator_ColumnVarNameInTable="columnAIU" msprop:Generator_ColumnPropNameInRow="AIU" msprop:Generator_ColumnPropNameInTable="AIUColumn" msprop:Generator_UserColumnName="AIU" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Imprevistos" msprop:Generator_ColumnVarNameInTable="columnImprevistos" msprop:Generator_ColumnPropNameInRow="Imprevistos" msprop:Generator_ColumnPropNameInTable="ImprevistosColumn" msprop:Generator_UserColumnName="Imprevistos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_UserColumnName="estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ObsInterna" msprop:Generator_ColumnVarNameInTable="columnObsInterna" msprop:Generator_ColumnPropNameInRow="ObsInterna" msprop:Generator_ColumnPropNameInTable="ObsInternaColumn" msprop:Generator_UserColumnName="ObsInterna" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Req_Id" msprop:Generator_ColumnVarNameInTable="columnReq_Id" msprop:Generator_ColumnPropNameInRow="Req_Id" msprop:Generator_ColumnPropNameInTable="Req_IdColumn" msprop:Generator_UserColumnName="Req_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="OC_Cliente" msprop:Generator_ColumnVarNameInTable="columnOC_Cliente" msprop:Generator_ColumnPropNameInRow="OC_Cliente" msprop:Generator_ColumnPropNameInTable="OC_ClienteColumn" msprop:Generator_UserColumnName="OC_Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contrato_Id" msprop:Generator_ColumnVarNameInTable="columnContrato_Id" msprop:Generator_ColumnPropNameInRow="Contrato_Id" msprop:Generator_ColumnPropNameInTable="Contrato_IdColumn" msprop:Generator_UserColumnName="Contrato_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="AIU_MO" msprop:Generator_ColumnVarNameInTable="columnAIU_MO" msprop:Generator_ColumnPropNameInRow="AIU_MO" msprop:Generator_ColumnPropNameInTable="AIU_MOColumn" msprop:Generator_UserColumnName="AIU_MO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CntAFabricar" msprop:Generator_ColumnVarNameInTable="columnCntAFabricar" msprop:Generator_ColumnPropNameInRow="CntAFabricar" msprop:Generator_ColumnPropNameInTable="CntAFabricarColumn" msprop:Generator_UserColumnName="CntAFabricar" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CheckListCotizacion" msprop:Generator_TableClassName="CheckListCotizacionDataTable" msprop:Generator_TableVarName="tableCheckListCotizacion" msprop:Generator_TablePropName="CheckListCotizacion" msprop:Generator_RowDeletingName="CheckListCotizacionRowDeleting" msprop:Generator_RowChangingName="CheckListCotizacionRowChanging" msprop:Generator_RowEvHandlerName="CheckListCotizacionRowChangeEventHandler" msprop:Generator_RowDeletedName="CheckListCotizacionRowDeleted" msprop:Generator_UserTableName="CheckListCotizacion" msprop:Generator_RowChangedName="CheckListCotizacionRowChanged" msprop:Generator_RowEvArgName="CheckListCotizacionRowChangeEvent" msprop:Generator_RowClassName="CheckListCotizacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Cab_Id" msprop:Generator_ColumnVarNameInTable="columnCab_Id" msprop:Generator_ColumnPropNameInRow="Cab_Id" msprop:Generator_ColumnPropNameInTable="Cab_IdColumn" msprop:Generator_UserColumnName="Cab_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="CheckList_Id" msprop:Generator_ColumnVarNameInTable="columnCheckList_Id" msprop:Generator_ColumnPropNameInRow="CheckList_Id" msprop:Generator_ColumnPropNameInTable="CheckList_IdColumn" msprop:Generator_UserColumnName="CheckList_Id" type="xs:short" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" msprop:Generator_UserColumnName="Valor" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DetCotizacion" msprop:Generator_TableClassName="DetCotizacionDataTable" msprop:Generator_TableVarName="tableDetCotizacion" msprop:Generator_TablePropName="DetCotizacion" msprop:Generator_RowDeletingName="DetCotizacionRowDeleting" msprop:Generator_RowChangingName="DetCotizacionRowChanging" msprop:Generator_RowEvHandlerName="DetCotizacionRowChangeEventHandler" msprop:Generator_RowDeletedName="DetCotizacionRowDeleted" msprop:Generator_UserTableName="DetCotizacion" msprop:Generator_RowChangedName="DetCotizacionRowChanged" msprop:Generator_RowEvArgName="DetCotizacionRowChangeEvent" msprop:Generator_RowClassName="DetCotizacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cab_ID" msprop:Generator_ColumnVarNameInTable="columnCab_ID" msprop:Generator_ColumnPropNameInRow="Cab_ID" msprop:Generator_ColumnPropNameInTable="Cab_IDColumn" msprop:Generator_UserColumnName="Cab_ID" type="xs:int" />
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" type="xs:unsignedByte" />
+              <xs:element name="CodInventario" msprop:Generator_ColumnVarNameInTable="columnCodInventario" msprop:Generator_ColumnPropNameInRow="CodInventario" msprop:Generator_ColumnPropNameInTable="CodInventarioColumn" msprop:Generator_UserColumnName="CodInventario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inventario_ID" msprop:Generator_ColumnVarNameInTable="columnInventario_ID" msprop:Generator_ColumnPropNameInRow="Inventario_ID" msprop:Generator_ColumnPropNameInTable="Inventario_IDColumn" msprop:Generator_UserColumnName="Inventario_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unidad_ID" msprop:Generator_ColumnVarNameInTable="columnUnidad_ID" msprop:Generator_ColumnPropNameInRow="Unidad_ID" msprop:Generator_ColumnPropNameInTable="Unidad_IDColumn" msprop:Generator_UserColumnName="Unidad_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Cant" msprop:Generator_ColumnVarNameInTable="columnCant" msprop:Generator_ColumnPropNameInRow="Cant" msprop:Generator_ColumnPropNameInTable="CantColumn" msprop:Generator_UserColumnName="Cant" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Costo" msprop:Generator_ColumnVarNameInTable="columnCosto" msprop:Generator_ColumnPropNameInRow="Costo" msprop:Generator_ColumnPropNameInTable="CostoColumn" msprop:Generator_UserColumnName="Costo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CostoTotal" msprop:Generator_ColumnVarNameInTable="columnCostoTotal" msprop:Generator_ColumnPropNameInRow="CostoTotal" msprop:Generator_ColumnPropNameInTable="CostoTotalColumn" msprop:Generator_UserColumnName="CostoTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DescItem" msprop:Generator_ColumnVarNameInTable="columnDescItem" msprop:Generator_ColumnPropNameInRow="DescItem" msprop:Generator_ColumnPropNameInTable="DescItemColumn" msprop:Generator_UserColumnName="DescItem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CabCotizacion" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="CheckListCotizacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CheckListCotizacion" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="DetCotizacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DetCotizacion" />
+      <xs:field xpath="mstns:Cab_ID" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK__CheckList__Cab_I__69FBBC1F" msdata:parent="CabCotizacion" msdata:child="CheckListCotizacion" msdata:parentkey="Id" msdata:childkey="Cab_Id" msprop:Generator_UserChildTable="CheckListCotizacion" msprop:Generator_ChildPropName="GetCheckListCotizacionRows" msprop:Generator_UserRelationName="FK__CheckList__Cab_I__69FBBC1F" msprop:Generator_ParentPropName="CabCotizacionRow" msprop:Generator_RelationVarName="relationFK__CheckList__Cab_I__69FBBC1F" msprop:Generator_UserParentTable="CabCotizacion" />
+      <msdata:Relationship name="FK__DetCotiza__Cab_I__29221CFB" msdata:parent="CabCotizacion" msdata:child="DetCotizacion" msdata:parentkey="Id" msdata:childkey="Cab_ID" msprop:Generator_UserChildTable="DetCotizacion" msprop:Generator_ChildPropName="GetDetCotizacionRows" msprop:Generator_UserRelationName="FK__DetCotiza__Cab_I__29221CFB" msprop:Generator_ParentPropName="CabCotizacionRow" msprop:Generator_RelationVarName="relationFK__DetCotiza__Cab_I__29221CFB" msprop:Generator_UserParentTable="CabCotizacion" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
